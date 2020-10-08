@@ -11,3 +11,10 @@ sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart
 @xset -dpms
 @xset s noblank
 @chromium-browser --incognito --kiosk http://localhost/ 
+
+
+To completely disable the onboard WiFi from the firmware on the Pi3 / Pi4, add
+
+dtoverlay=disable-wifi
+
+in /boot/config.txt.
